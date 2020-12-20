@@ -72,7 +72,7 @@ public Onclass(){
                                 try {
                                         DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
                                         System.out.println("Driver registered successfully");
-                                        con=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                        con=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
 
 
                                         ps=con.prepareStatement("select * from user_details where username=?");
@@ -176,7 +176,7 @@ public Onclass(){
                                                                
                                                         
                                                             try {
-                                                                Connection con4=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con4=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                  Statement st1=con4.createStatement();
                                                                  ResultSet rs=st1.executeQuery("select * from assignments where sub='OS'");
                                                                  while(rs.next()){
@@ -228,7 +228,7 @@ public Onclass(){
                                                                
                                                         
                                                             try {
-                                                                Connection con5=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con5=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                  Statement st2=con5.createStatement();
                                                                  ResultSet rs2=st2.executeQuery("select * from assignments where sub='Java'");
                                                                  while(rs2.next()){
@@ -280,7 +280,7 @@ public Onclass(){
                                                                
                                                         
                                                             try {
-                                                                Connection con6=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con6=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                  Statement st3=con6.createStatement();
                                                                  ResultSet rs3=st3.executeQuery("select * from assignments where sub='DBMS'");
                                                                  while(rs3.next()){
@@ -337,7 +337,7 @@ public Onclass(){
                                                         
                                                         
                                                             try {
-                                                                Connection con1=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con1=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                 PreparedStatement ps1=null;
            
                                                                 ps1=con1.prepareStatement("insert into assignments values (?,?)");
@@ -390,7 +390,7 @@ public Onclass(){
                                                         
                                                         
                                                             try {
-                                                                Connection con2=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con2=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                 PreparedStatement ps2=null;
            
                                                                 ps2=con2.prepareStatement("insert into users values (?,?,?,?)");
@@ -448,7 +448,7 @@ public Onclass(){
                                                         
                                                         
                                                             try {
-                                                                Connection con3=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "Kalpana@24");
+                                                                Connection con3=DriverManager.getConnection("jdbc:mysql://127.0.0.1/classroom", "root", "pass123");
                                                                 PreparedStatement ps3=null;
            
                                                                 ps3=con3.prepareStatement("delete from users where reg_no=?");
